@@ -27,10 +27,12 @@ describe("Helpers Suite", () => {
     ]);
   });
 
+
   it("should identify if sum to target exist", () => {
     expect(helpers.sumToTarget([], 0)).toEqual([]);
     expect(helpers.sumToTarget([3, 6, 7, 12, -1, -4], 100)).toEqual([]);
     expect(helpers.sumToTarget([3, 6, 7, 12, -1, -4], 10)).toEqual([3, 7]);
     expect(helpers.sumToTarget([44, 5, 1, 6, -43, -1, 7], 0)).toEqual([1, -1]);
   });
+  */
 });
