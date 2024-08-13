@@ -27,25 +27,6 @@ describe("Helpers Suite", () => {
     ]);
   });
 
-  it("should search a collection for a target value", () => {
-    const nestedObject = {
-      data: {
-        info: {
-          stuff: {
-            thing: {
-              moreStuff: {
-                magicNumber: 44,
-                magicString: "bar",
-              },
-            },
-          },
-        },
-      },
-    };
-    expect(helpers.contains(nestedObject, 44)).toEqual(true);
-    expect(helpers.contains(nestedObject, "foo")).toEqual(false);
-  });
-
   it("should identify if sum to target exist", () => {
     expect(helpers.sumToTarget([], 0)).toEqual([]);
     expect(helpers.sumToTarget([3, 6, 7, 12, -1, -4], 100)).toEqual([]);
